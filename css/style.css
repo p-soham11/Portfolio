@@ -885,6 +885,59 @@ h3.my-profession {
         height: 400px;
     }
 }
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+    margin-bottom: 1rem;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 280px;
+    height: 255px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.15);
+}
+
+.button-85 {
+    padding: 0.6em 2em;
+    font-size: larger;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #474646;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 15px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: 0.2s;
+}
+
+.button-85:hover {
+    transform: scale(1.1);
+    background: #928f8f;
+    color: #141414;
+    transition: 0.3s;
+}
+
 @media (max-width: 930px) and (min-width: 800px) {
     .contact .contact-info-item,
     .portfolio .portfolio-item,
